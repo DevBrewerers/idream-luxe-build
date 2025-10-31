@@ -43,10 +43,10 @@ export const CTA = () => {
           >
             For a stress-free development experience, call us on{" "}
             <a
-              href="tel:02070460208"
+              href="tel:02080450533"
               className="font-semibold underline hover:text-background transition-colors"
             >
-              020 7046 0208
+              0208 045 0533
             </a>{" "}
             or send us your project brief.
           </motion.p>
@@ -56,7 +56,7 @@ export const CTA = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 lg:gap-6"
           >
             <a
-              href="tel:02070460208"
+              href="tel:02080450533"
               className="group inline-flex items-center gap-3 px-8 lg:px-10 py-4 lg:py-5 bg-background text-primary font-sans text-base lg:text-lg font-medium hover:bg-secondary transition-all duration-500 hover:shadow-2xl w-full sm:w-auto justify-center"
             >
               <Phone size={20} />
