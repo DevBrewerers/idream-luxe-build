@@ -10,8 +10,8 @@ export const Hero = () => {
     // Preload video
     const video = document.createElement("video");
     video.src = window.innerWidth >= 1024
-      ? "https://res.cloudinary.com/di9xtaqhg/video/upload/v1761871633/idream_hero-video_lg_pxkain.mp4"
-      : "https://res.cloudinary.com/di9xtaqhg/video/upload/v1761871134/idream_hero-video_raxq1q.mp4";
+      ? "https://res.cloudinary.com/di9xtaqhg/video/upload/v1761880957/idream_hero-video_lg_bkfji8.mp4"
+      : "https://res.cloudinary.com/di9xtaqhg/video/upload/v1761880956/idream_hero-video_igcszr.mp4";
     video.onloadeddata = () => setIsVideoLoaded(true);
   }, []);
 
@@ -40,8 +40,8 @@ export const Hero = () => {
             <source
               src={
                 window.innerWidth >= 1024
-                  ? "https://res.cloudinary.com/di9xtaqhg/video/upload/v1761871633/idream_hero-video_lg_pxkain.mp4"
-                  : "https://res.cloudinary.com/di9xtaqhg/video/upload/v1761871134/idream_hero-video_raxq1q.mp4"
+                  ? "https://res.cloudinary.com/di9xtaqhg/video/upload/v1761880957/idream_hero-video_lg_bkfji8.mp4"
+                  : "https://res.cloudinary.com/di9xtaqhg/video/upload/v1761880956/idream_hero-video_igcszr.mp4"
               }
               type="video/mp4"
             />
