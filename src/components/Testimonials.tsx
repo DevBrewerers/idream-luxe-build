@@ -34,7 +34,7 @@ export const Testimonials = () => {
   });
 
   return (
-    <section id="testimonials" className="py-24 lg:py-32 bg-secondary">
+    <section id="testimonials" className="py-24 lg:py-32 bg-muted">
       <div className="container mx-auto px-6 lg:px-12">
         <motion.div
           ref={ref}
@@ -46,7 +46,7 @@ export const Testimonials = () => {
           {/* Header */}
           <div className="text-center mb-16 lg:mb-20">
             <motion.div variants={fadeUp} className="mb-6">
-              <span className="font-sans text-sm tracking-widest uppercase text-accent">
+              <span className="font-sans text-sm tracking-widest uppercase text-primary">
                 Client Testimonials
               </span>
             </motion.div>

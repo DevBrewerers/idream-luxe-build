@@ -7,6 +7,7 @@ const navLinks = [
   { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
   { name: "Process", href: "#process" },
+  { name: "FAQ", href: "#faq" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -65,7 +66,7 @@ export const Navbar = () => {
       transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
         isScrolled
-          ? "bg-accent/95 backdrop-blur-md shadow-lg"
+          ? "bg-background/95 backdrop-blur-md shadow-lg"
           : "bg-transparent"
       }`}
     >
@@ -83,11 +84,9 @@ export const Navbar = () => {
             transition={{ duration: 0.3 }}
           >
             <img
-              src="https://res.cloudinary.com/di9xtaqhg/image/upload/v1761871008/idream_logo_transparent_fuyx2u.png"
+              src="https://res.cloudinary.com/di9xtaqhg/image/upload/v1761932892/iDream_u1wxhb.png"
               alt="iDream Interior Design & Build"
-              className={`h-12 lg:h-14 w-auto transition-all duration-700 ${
-                isScrolled ? "brightness-0 invert" : ""
-              }`}
+              className="h-12 lg:h-14 w-auto transition-all duration-700"
             />
           </motion.a>
 
@@ -103,7 +102,7 @@ export const Navbar = () => {
                 }}
                 className={`relative font-sans text-sm lg:text-base transition-colors duration-700 group ${
                   isScrolled
-                    ? "text-background hover:text-primary"
+                    ? "text-foreground hover:text-primary"
                     : "text-white hover:text-primary"
                 }`}
               >
@@ -118,7 +117,7 @@ export const Navbar = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className={`md:hidden transition-colors duration-700 ${
               isScrolled
-                ? "text-background hover:text-primary"
+                ? "text-foreground hover:text-primary"
                 : "text-white hover:text-primary"
             }`}
             aria-label="Toggle menu"
@@ -138,7 +137,7 @@ export const Navbar = () => {
             transition={{ duration: 0.3 }}
             className={`md:hidden border-t transition-colors duration-700 ${
               isScrolled
-                ? "bg-accent border-accent-foreground/20"
+                ? "bg-background border-border"
                 : "bg-background border-border"
             }`}
           >
@@ -149,7 +148,7 @@ export const Navbar = () => {
                   onClick={() => scrollToSection(link.href)}
                   className={`font-sans text-lg transition-colors text-left w-full ${
                     isScrolled
-                      ? "text-background hover:text-primary"
+                      ? "text-foreground hover:text-primary"
                       : "text-foreground hover:text-primary"
                   }`}
                 >
