@@ -40,7 +40,13 @@ export const Footer = () => {
               className="h-16 w-auto mb-6 brightness-0 invert"
             />
             <p className="font-sans text-background/80 mb-6 leading-relaxed">
-              Local master building contractors specializing in luxury interior design, new builds, and extensions across West & North London.
+              iDream Interior Design & Build Ltd – Local master building contractors specializing in luxury interior design, new builds, and extensions across West & North London.
+            </p>
+            <p className="font-sans text-sm text-background/70 mb-2">
+              330 Bath Road, Slough, Berkshire, SL1 6JA
+            </p>
+            <p className="font-sans text-sm text-background/70 mb-6">
+              Company Registration Number: 15130764 | Registered in England and Wales
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
@@ -83,10 +89,10 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <Phone size={20} className="mt-1 flex-shrink-0" />
                 <a
-                  href="tel:02080450533"
+                  href="tel:02070460208"
                   className="font-sans text-background/80 hover:text-background transition-colors"
                 >
-                  0208 045 0533
+                  020 7046 0208
                 </a>
               </li>
               <li className="flex items-start gap-3">

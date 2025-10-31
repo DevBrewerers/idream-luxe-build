@@ -38,7 +38,7 @@ export const Navbar = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
           ? "bg-background/95 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
+          : "bg-foreground/90 backdrop-blur-sm"
       }`}
     >
       <div className="container mx-auto px-6 lg:px-12">
@@ -71,7 +71,9 @@ export const Navbar = () => {
                   e.preventDefault();
                   scrollToSection(link.href);
                 }}
-                className="relative font-sans text-sm lg:text-base text-foreground hover:text-primary transition-colors duration-300 group"
+                className={`relative font-sans text-sm lg:text-base transition-colors duration-300 group ${
+                  isScrolled ? "text-foreground hover:text-primary" : "text-background hover:text-primary"
+                }`}
               >
                 {link.name}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
@@ -82,7 +84,9 @@ export const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-foreground hover:text-primary transition-colors"
+            className={`md:hidden transition-colors ${
+              isScrolled ? "text-foreground hover:text-primary" : "text-background hover:text-primary"
+            }`}
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
