@@ -59,7 +59,7 @@ export const Hero = () => {
           />
         )}
         {/* Dark overlay for text contrast */}
-        <div className="absolute inset-0 video-overlay" />
+        <div className="absolute inset-0 video-overlay " />
       </div>
 
       {/* Hero Content */}

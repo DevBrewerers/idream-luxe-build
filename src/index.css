@@ -8,39 +8,39 @@
 
 @layer base {
   :root {
-    /* Brand Colors - Dark Luxury Palette */
-    --background: 217 48% 16%; /* #14213c deep blue */
-    --foreground: 30 60% 95%; /* light warm white for text */
+    /* Brand Colors - White with Navy Blue & Copper */
+    --background: 0 0% 100%; /* Pure white background */
+    --foreground: 210 100% 15%; /* Navy blue for text */
 
-    --primary: 20 55% 60%; /* #cb8865 peachy coral accent */
-    --primary-foreground: 217 48% 16%;
+    --primary: 210 100% 25%; /* Navy blue for primary branding */
+    --primary-foreground: 0 0% 100%; /* White text on navy */
 
-    --secondary: 17 37% 46%; /* #a66149 terracotta */
-    --secondary-foreground: 30 60% 95%;
+    --secondary: 29 60% 45%; /* Copper for secondary branding */
+    --secondary-foreground: 0 0% 100%; /* White text on copper */
 
-    --accent: 5 16% 38%; /* #6f5250 brownish gray */
-    --accent-foreground: 30 60% 95%;
+    --accent: 29 70% 50%; /* Brighter copper accent */
+    --accent-foreground: 0 0% 100%;
 
-    --muted: 312 15% 15%; /* #28212d dark purple */
-    --muted-foreground: 30 30% 70%;
+    --muted: 210 20% 96%; /* Very light blue-gray */
+    --muted-foreground: 210 15% 45%;
 
-    --card: 217 48% 18%;
-    --card-foreground: 30 60% 95%;
+    --card: 0 0% 100%; /* White cards */
+    --card-foreground: 210 100% 15%;
 
-    --border: 217 30% 25%;
-    --input: 217 30% 20%;
-    --ring: 20 55% 60%;
+    --border: 210 20% 85%; /* Light border */
+    --input: 210 20% 98%; /* Almost white input background */
+    --ring: 210 100% 25%; /* Navy blue focus ring */
 
     /* No border radius - sharp architectural edges */
     --radius: 0rem;
 
     /* Luxury Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(217 48% 16% / 0.9), hsl(312 15% 15% / 0.7));
-    --gradient-accent: linear-gradient(90deg, hsl(20 55% 60%), hsl(17 37% 46%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 100% / 0.95), hsl(210 20% 96% / 0.9));
+    --gradient-accent: linear-gradient(90deg, hsl(210 100% 25%), hsl(29 60% 45%));
     
-    /* Shadows - Subtle and sophisticated */
-    --shadow-soft: 0 4px 24px hsl(217 48% 8% / 0.4);
-    --shadow-medium: 0 8px 32px hsl(217 48% 8% / 0.6);
+    /* Shadows - Crisp and clean */
+    --shadow-soft: 0 2px 12px hsl(210 15% 50% / 0.08);
+    --shadow-medium: 0 4px 24px hsl(210 15% 50% / 0.12);
     
     /* Transitions */
     --transition-smooth: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
@@ -107,8 +107,8 @@
     scroll-behavior: smooth;
   }
 
-  /* Video overlay */
+  /* Video overlay - Dark for text visibility */
   .video-overlay {
-    background: var(--gradient-hero);
+    background: linear-gradient(135deg, hsl(210 100% 15% / 0.7), hsl(210 100% 10% / 0.8));
   }
 }
